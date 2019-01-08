@@ -1,17 +1,17 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require_relative 'lib/arkecosystem/client/version'
+require_relative 'lib/phantomchain/client/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'arkecosystem-client'
-  spec.version       = ArkEcosystem::Client::VERSION
+  spec.name          = 'phantomchain-client'
+  spec.version       = PhantomChain::Client::VERSION
   spec.authors       = ['Brian Faust']
   spec.email         = ['brian@ark.io']
 
-  spec.summary       = 'A simple Ruby API client for the Ark Blockchain.'
-  spec.description   = 'A simple Ruby API client for the Ark Blockchain.'
-  spec.homepage      = 'https://github.com/ArkEcosystem/ruby-client'
+  spec.summary       = 'A simple Ruby API client for the PHANTOM Blockchain.'
+  spec.description   = 'A simple Ruby API client for the PHANTOM Blockchain.'
+  spec.homepage      = 'https://github.com/PhantomChain/ruby-client'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

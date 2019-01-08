@@ -1,4 +1,4 @@
-describe ArkEcosystem::Client::API::Node do
+describe PhantomChain::Client::API::Node do
   before(:each) do
     get_connection
   end

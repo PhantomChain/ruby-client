@@ -6,7 +6,7 @@ if ENV['CI'] == 'true'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
-require 'arkecosystem/client'
+require 'phantomchain/client'
 require 'bundler/setup'
 require 'webmock/rspec'
 
@@ -61,7 +61,7 @@ def get_connection
     stub.post("#{@host}/wallets/search") { |_env| [200, {}, @response_body] }
   end
 
-  @connection = ArkEcosystem::Client::Connection.new(
+  @connection = PhantomChain::Client::Connection.new(
     host: @host
   )
 

@@ -1,10 +1,10 @@
-require 'arkecosystem/client/connection'
+require 'phantomchain/client/connection'
 
-module ArkEcosystem
+module PhantomChain
   module Client
     # Manager that holds all connections
     #
-    # @see https://docs.ark.io/v1.0/reference
+    # @see https://docs.phantom.org/v1.0/reference
     class ConnectionManager
       attr_accessor :default, :connections
 
@@ -18,7 +18,7 @@ module ArkEcosystem
 
       # Connection to the given connection.
       #
-      # @param connection [ArkEcosystem::Client::Connection]
+      # @param connection [PhantomChain::Client::Connection]
       # @param name [String]
       #
       # @return [Faraday::Response]
@@ -39,7 +39,7 @@ module ArkEcosystem
       #
       # @param name [String]
       #
-      # @return [ArkEcosystem::Client::Connection]
+      # @return [PhantomChain::Client::Connection]
       def connection(name)
         @connections[name]
       end

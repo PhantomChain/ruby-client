@@ -1,4 +1,4 @@
-describe ArkEcosystem::Client::API::Wallets do
+describe PhantomChain::Client::API::Wallets do
   before(:each) do
     get_connection
   end

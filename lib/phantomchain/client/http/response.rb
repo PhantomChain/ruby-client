@@ -1,6 +1,6 @@
 require 'json'
 
-module ArkEcosystem
+module PhantomChain
   module Client
     module HTTP
       # The HTTP response returned by the client.

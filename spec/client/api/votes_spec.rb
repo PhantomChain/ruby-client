@@ -1,4 +1,4 @@
-describe ArkEcosystem::Client::API::Votes do
+describe PhantomChain::Client::API::Votes do
   before(:each) do
     get_connection
   end

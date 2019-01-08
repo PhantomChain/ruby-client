@@ -1,7 +1,7 @@
 require 'faraday_middleware'
-require 'arkecosystem/client/http/response'
+require 'phantomchain/client/http/response'
 
-module ArkEcosystem
+module PhantomChain
   module Client
     module HTTP
       # The HTTP client used for sending requests.
@@ -12,7 +12,7 @@ module ArkEcosystem
         #
         # @param config [Hash]
         #
-        # @return [ArkEcosystem::Client::API::Two::Wallets]
+        # @return [PhantomChain::Client::API::Two::Wallets]
         def initialize(config)
           @host = config[:host]
           @http_client = nil
@@ -70,7 +70,7 @@ module ArkEcosystem
         def send_request(method, path, data)
           response = faraday.send(method, path, data)
 
-          ArkEcosystem::Client::HTTP::Response.new(response)
+          PhantomChain::Client::HTTP::Response.new(response)
         end
 
         # Create a new Faraday instance.

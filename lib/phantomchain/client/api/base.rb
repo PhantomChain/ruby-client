@@ -1,6 +1,6 @@
-require 'arkecosystem/client/api/base'
+require 'phantomchain/client/api/base'
 
-module ArkEcosystem
+module PhantomChain
   module Client
     module API
       # The base for any API resources.

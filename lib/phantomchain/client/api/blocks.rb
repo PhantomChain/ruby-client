@@ -1,6 +1,6 @@
-require 'arkecosystem/client/api/base'
+require 'phantomchain/client/api/base'
 
-module ArkEcosystem
+module PhantomChain
   module Client
     module API
       # Methods for the Blocks API

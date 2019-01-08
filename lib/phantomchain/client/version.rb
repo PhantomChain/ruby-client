@@ -1,4 +1,4 @@
-module ArkEcosystem
+module PhantomChain
   module Client
     # Current major release.
     MAJOR = 1

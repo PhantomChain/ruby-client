@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in arkecosystem-client.gemspec
+# Specify your gem's dependencies in phantomchain-client.gemspec
 gemspec
 
 group :development do
